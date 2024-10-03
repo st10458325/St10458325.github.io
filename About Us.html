@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>International United Apostolic Faith Church</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+<body>
+    
+    <section>
+        <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/imgbackground01.jpg);">
+         <nav>
+         <a href="index.html"> <img src="images/logo.jpg" alt="church logo" class="logo"></a>
+        
+             <div class="navbar" id="navbar">
+                 <i class="fa fa-times" onclick="hideMenu()"></i>
+     
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="About Us.html">About Us</a></li>
+                 <li><a href="Services.html">Services</a></li>
+                 <li><a href="Donation.html">Donation</a></li>
+                 <li><a href="Contact.html">Contact</a></li>
+             </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+     
+         <div class="content">
+             <h1>About Us</h1>
+            
+         </div>
+         </nav>
+        </div>
+     </section>
+     
+
+  
+    <main>
+        <div class="box" id="">
+        <div class="history" id="item-hover">
+            <h2><b><u>History</u></b></h2>
+            <hr>
+            <br>
+            <p>
+                The International United Apostolic Faith Church (I.U.A.F.C) is an up-and-coming church founded by a 
+                group of people who wished to spread love, healing and their faith in God. The church was founded
+                in 2017 and formally established on the 5th of October 2021. As of yet the church has grown exponentially, spreading its 
+                reach to neighboring countries like Botswana and Zimbabwe. The church has also grown in numbers 
+                from being a small group of like-minded individuals to a vibrant and diverse congregation united in 
+                faith and purpose.
+            </p>
+        </div>
+    
+        <div class="mission" id="item-hover">
+            <h2><b><u>Mission</u></b></h2>
+            <hr>
+            <br>
+            <p>
+                The mission of the church revolves around several core elements, which are:
+                <ul>
+                    <li><b>Spreading the Gospel:</b> Sharing the message of Jesus Christ and the teachings of Christianity with others, both locally and globally.</li>
+                    <li><b>Worship:</b> Providing a space and opportunity for believers to worship God collectively, through services, music, and prayer.</li>
+                    <li><b>Fellowship:</b> Building a community of believers who support and encourage one another in their faith journey.</li>
+                    <li><b>Discipleship:</b> Teaching and helping members grow in their faith, understanding of Scripture, and spiritual practices.</li>
+                    <li><b>Service:</b> Engaging in acts of charity and service to meet the needs of the community and help those in need, reflecting Christ's love through action.</li>
+                    <li><b>Outreach:</b> Reaching out to those outside the church to address social issues, provide aid, and invite them to explore faith.</li>
+                    <br>
+                </ul>
+            </p>
+        </div>
+    
+
+        <div class="futurePlans" id="item-hover">
+            <h2><b><u>Future Plans</u></b></h2>
+            <hr>
+            <br>
+            <p>
+                
+                <b> 1.Expansion of Programs and Services:</b><br>
+                - New Ministries: Developing or expanding programs for youth, families, seniors, or specific needs in the community.<br>
+                - Community Outreach: Initiatives aimed at reaching more people in the local community, including partnerships with other organizations or establishing new service projects.
+                      <br><br>
+
+                <b>  2.Facilities and Infrastructure:</b><br>
+                        - Building Projects: Renovations, expansions, or new construction to accommodate growing congregations or improve accessibility.<br>
+                        - Technology Upgrades: Implementing or upgrading digital tools for streaming services, online giving, and virtual community engagement.
+                    <br><br>
+                    
+                <b> 3.Community Engagement and Social Impact:</b><br>
+                        - ocial Justice Initiatives: Addressing local and global issues such as poverty, inequality, and environmental concerns through advocacy and action.<br>
+                        - Partnerships: Collaborating with other faith communities, nonprofits, and civic organizations to amplify impact.
+                    <br><br>
+                    
+                <b> 4.Growth and Evangelism:</b><br>
+                        - Church Planting: Starting new church locations or congregations to reach different neighborhoods or regions.<br>
+                        - Outreach Campaigns: Initiatives to invite and welcome new members, including marketing efforts and special events.
+                    <br><br>
+            </p>
+        </div>
+
+
+        <div class="staff" id="item-hover">
+            <h2><b><u>Staff</u></b></h2>
+            <div class="staffbox" id="item-hover">
+                <div class="staffimg1">
+                    <img src="images/imgpastor.jpg" alt="Founder">
+                </div>
+                <div class="staffimg2">
+                    <h4><b>Founder</b></h4>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                </div>
+            </div>
+            <div class="staffbox" id="item-hover">
+                <div class="staffimg1">
+                    <img src="images/imgminiser.jpg" alt="Founder">
+                </div>
+                <div class="staffimg2">
+                    <h4><b>Minister</b></h4>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                </div>
+            </div>
+            <div class="staffbox" id="item-hover">
+                <div class="staffimg1">
+                    <img src="images/imggivi.jpg" alt="Founder">
+                </div>
+                <div class="staffimg2">
+                    <h4><b>Bishop</b></h4>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                </div>
+            </div>
+            <!-- Add more staff boxes here -->
+        </div>
+    </div>
+    </main>
+    
+    <footer>
+        <hr>
+        <br>
+        <p>Author: Armstrong Tatera</p>
+        <p>Email: armstrongtatera@gmail.com</p>
+        <p>Contact/WhatsApp: +27 02 588 7554</p>
+        <p>Copyright &bull;&copy;&#8482; 2024. All rights reserved</p>
+        <br>
+    </footer>
+   
+<!----------- JAVAscript for Toggle menu ------------->
+    <script>
+
+        var navbar = document.getElementById("navbar");
+ 
+        function showMenu(){
+         navbar.style.right = "0";
+        }
+        function hideMenu(){
+         navbar.style.right = "-200px";
+        }
+     </script>
+</body>
+</html>
+
+<style>
+
+</style>

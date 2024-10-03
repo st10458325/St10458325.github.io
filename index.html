@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>International United Apostolic Faith Church</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+<section>
+    <div class="banner">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="church logo" class="logo">
+            </a>
+            <div class="navbar" id="navbar">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Donation.html">Donation</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+            <div class="content">
+                <h1>International United Apostolic <br> Faith Church</h1>
+                <p>Where Hope and Love Unite, to Embrace Faith, Inspire Change.</p>
+                <div>
+                    <a href="Services.html">
+                        <button type="button"><span></span>SERVICES</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<main>
+    <div class="container">
+        <a href="About Us.html" class="card-link">
+            <div class="card" id="item-hover">
+                <img src="images/imgbackground01.jpg" alt="" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">About US</h3>
+                    <p class="card-text">We are a community rooted in faith, love, and service. Discover more about our values, ministries, and the heart of our congregation.</p>
+                </div>
+            </div>
+        </a>
+        <a href="Services.html" class="card-link">
+            <div class="card" id="item-hover">
+                <img src="images/imgbackground02.jpg" alt="" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Services</h3>
+                    <p class="card-text">We offer a variety of services to support your spiritual journey and strengthen our community. Explore all the ways we can walk together in faith.</p>
+                </div>
+            </div>
+        </a>
+        <a href="Donation.html" class="card-link">
+            <div class="card" id="item-hover">
+                <img src="images/imgbackground03.jpg" alt="" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Donation</h3>
+                    <p class="card-text">Your generous donations help us extend our reach and continue our mission of spreading love and hope. Join us in making a difference by giving today.</p>
+                </div>
+            </div>
+        </a>
+        <a href="Contact.html" class="card-link">
+            <div class="card" id="item-hover">
+                <img src="images/imgbackground04.jpg" alt="" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Contact us</h3>
+                    <p class="card-text">Whether you have questions or need prayer, we're here for you. Reach out to us by phone, email, or visit us in person.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</main>
+
+<footer>
+    <hr>
+    <br>
+    <p>Author: Armstrong Tatera</p>
+    <p>Email: armstrongtatera@gmail.com</p>
+    <p>Contact/WhatsApp: +27 02 588 7554</p>
+    <p>Copyright &bull;&copy;&#8482; 2024. All rights reserved</p>
+    <br>
+</footer>
+
+<!----------- JAVAscript for Toggle menu ------------->
+
+<script>
+    var navbar = document.getElementById("navbar");
+
+    function showMenu() {
+        navbar.style.right = "0";
+    }
+
+    function hideMenu() {
+        navbar.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

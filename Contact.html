@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>International United Apostolic Faith Church</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<section>
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/imgbackground04.jpg);">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="church logo" class="logo">
+            </a>
+            <div class="navbar" id="navbar">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Donation.html">Donation</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <div class="content">
+                <h1>Contact</h1>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<main>
+    <div class="box" id="item-hover">
+        <h2>Contact</h2>
+        <p>
+            Cell: *** *** ****<br>
+            Email: @gmail.com<br>
+        </p>
+
+        <h2>Location</h2>
+        <div class="branch-container">
+            
+            <!-- #region -->
+            <a href="" class="card-link">
+                <div class="card">
+                    <img src="images/imgbackground1.jpg" alt="" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">1. Branch</h3>
+                        <p class="card-text">Western Cape,<br>11 Str<br></p>
+                    </div>
+                </div>
+            </a>
+            <!-- #endregion -->
+            
+            <!-- #region -->
+            <a href="" class="card-link">
+                <div class="card">
+                    <img src="images/imgbackground2.jpeg" alt="" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">2. Branch</h3>
+                        <p class="card-text">Eastern Cape,<br>11 Str<br></p>
+                    </div>
+                </div>
+            </a>
+            <!-- #endregion -->
+
+            <!-- #region -->
+            <a href="" class="card-link">
+                <div class="card">
+                    <img src="images/imgbackground3.jpeg" alt="" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">3. Branch</h3>
+                        <p class="card-text">Southern Cape,<br>11 Str<br></p>
+                    </div>
+                </div>
+            </a>
+            <!-- #endregion -->
+
+        </div>
+    </div>
+</main>
+
+<footer>
+    <hr>
+    <br>
+    <p>Author: Armstrong Tatera</p>
+    <p>Email: armstrongtatera@gmail.com</p>
+    <p>Contact/WhatsApp: +27 02 588 7554</p>
+    <p>Copyright &bull;&copy;&#8482; 2024. All rights reserved</p>
+    <br>
+</footer>
+
+<!----------- JAVAscript for Toggle menu ------------->
+
+<script>
+    var navbar = document.getElementById("navbar");
+
+    function showMenu() {
+        navbar.style.right = "0";
+    }
+
+    function hideMenu() {
+        navbar.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

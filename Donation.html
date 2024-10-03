@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>International United Apostolic Faith Church</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<section>
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/imgbackground03.jpg);">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="church logo" class="logo">
+            </a>
+
+            <div class="navbar" id="navbar">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Donation.html">Donation</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+            <div class="content">
+                <h1>Donation</h1>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<main>
+    <div class="box" id="item-hover">
+        <h2>Support Our Community: Make a Difference Today</h2>
+        <p>
+            At I.U.A.F.C, we believe in spreading love and support to those in need. Your generous donations can make a profound impact in our community.
+        </p>
+        <br>
+        <p>We accept:</p>
+        <br>
+        
+        <div class="branch-container">
+            <div class="donation-item" >
+                <b><h4>Toys</h4></b>
+                Brighten a child's day with new or gently used toys. Your donations will bring joy and comfort to those who need it most. 
+                <br><br>
+                <div>
+                    <a href="Toyform.html">
+                        <button type="button" class="gradient-button">
+                            <span class="button-text">Donate Toys</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="donation-item" >
+                <b><h4>Clothes</h4></b>
+                Help families stay warm and comfortable by donating clean, gently used clothing. Your contributions will ensure that everyone has the basics they need. 
+                <div>
+                    <a href="ClotheForm.html">
+                        <button type="button" class="gradient-button">
+                            <span class="button-text">Donate Clothes</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="donation-item">
+                <b><h4>Money</h4></b>
+                Financial contributions allow us to provide essential services and support to our community. Every dollar you give goes directly to helping those in need.
+                <br><br>
+                <div>
+                    <a href="MoneyForm.html">
+                        <button type="button" class="gradient-button">
+                            <span class="button-text">Donate Money</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <p>If you would like to make a different type of donation, please click here.</p>
+        <br>
+
+        <div>
+            <a href="donationForm.html">
+                <button type="button" class="gradient-button">
+                    <span class="button-text">Donate here</span>
+                </button>
+            </a>
+        </div>
+
+        <br>
+
+        <p>
+            Your kindness and generosity are greatly appreciated. Together, we can make a real difference. Donate today and help us continue our mission of service and compassion.
+        </p>
+        
+        <br>
+        <p>
+            For more information or to arrange a drop-off, please contact us <a href="Contact.html">here</a>.
+        </p>
+        <p>Thank you for your support!</p>
+    </div>
+</main>
+<footer>
+    <hr>
+    <br>
+    <p>Author: Armstrong Tatera</p>
+    <p>Email: armstrongtatera@gmail.com</p>
+    <p>Contact/WhatsApp: +27 02 588 7554</p>
+    <p>Copyright &bull;&copy;&#8482; 2024. All rights reserved</p>
+    <br>
+</footer>
+
+<!----------- JAVAscript for Toggle menu ------------->
+
+<script>
+    var navbar = document.getElementById("navbar");
+ 
+    function showMenu() {
+        navbar.style.right = "0";
+    }
+
+    function hideMenu() {
+        navbar.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

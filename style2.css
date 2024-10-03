@@ -1,0 +1,341 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Helvetica, Arial;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; 
+}
+
+/* Banner Styles */
+.banner {
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\NAVIGATION BAR\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar {
+    flex: 1;
+    width: 80%;
+    text-align: right;
+    margin-top: -100px;
+}
+
+.logo {
+    width: 90px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(1, 8, 102);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+nav .fa{
+    display: none;
+}
+nav .fa.fa-bars {
+    position: absolute; 
+    top: 10px; 
+    right: 20px; 
+    color: white; 
+    font-size: 24px; 
+    cursor: pointer; 
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    transform: translateY(-50%); 
+    top: 30%;
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 30px;
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\END NAVIGATION BAR\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/* Main Content Styles */
+main {
+    flex-grow: 1; /* Allow content to take available space */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+#item-hover {
+    border: 2px solid #6db1ff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Pop-up Hover Effect */
+
+#item-hover:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Staff Box Styles */
+
+
+.staffbox {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #000d1d;
+    color: #ffffff;
+}
+
+.staffimg1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: #000d1d;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+   
+    .content h1 {
+        font-size: 20px;
+        margin-top: 80px; 
+    }
+    .navbar ul li {
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        background: rgb(34, 34, 36);
+        height: 100vh;
+        width: 200px;
+        margin-top: 0;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .navbar ul li {
+        list-style: none;
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        position: relative;
+    }
+    .navbar ul li::after {
+        height: 8px;
+        bottom: -4px;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .services {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+    .branch-container {
+        flex-direction: column;
+    }
+    
+}
+
+/* /////////////////////////////////////////// Servivices page ///////////////////////////////////////////*/
+
+/* Main Services Container */
+
+
+/* Service Item Styles */
+.service-item {
+    padding: 15px 0;
+}
+
+/* Heading Styles */
+h2 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #4a90e2;
+    margin: 10px 0;
+
+}
+
+
+/* Link Styles */
+.gradient-button {
+    position: relative;
+    padding: 10px 20px;
+    background: transparent; 
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #4a90e2;
+    color: #4a90e2;
+}
+
+.gradient-button span {
+    position: relative;
+    z-index: 1; 
+}
+
+.gradient-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgb(1, 8, 102), #09ff00); 
+    z-index: 0; 
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease; 
+}
+
+.gradient-button:hover::before {
+    transform: translateX(0); 
+}
+
+.gradient-button:hover{
+    color: white;
+    border-color: transparent;
+}
+/* /////////////////////////////////////////// DONATION page ///////////////////////////////////////////*/
+.donation-item{
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: transform 1s, box-shadow 1s;
+    margin: 0px 10px;
+    padding: 10px;
+    border: 2px solid #c2c2c2;
+}
+.donation-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #000d1d;
+    color: white;
+}
+
+/* /////////////////////////////////////////// Contact page ///////////////////////////////////////////*/
+.branch-container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+.card-content {
+    padding: 15px;
+}
+.card {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 0px 10px;
+}
+
+/* Pop-up Hover Effect */
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #000d1d;
+    color: white;
+}
+

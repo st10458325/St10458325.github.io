@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Toy Donation Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="styleForm.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Toy Donation Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="tel">Cell:</label>
+                <input type="tel" id="tel" name="tel" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number">Number of Toys:</label>
+                <input type="number" id="number" name="number" required min="1">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date of Donation:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="file">Picture of Donation:</label>
+                <input type="file" id="file" name="file" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn">
+                <input type="reset" value="Reset" class="btn">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
